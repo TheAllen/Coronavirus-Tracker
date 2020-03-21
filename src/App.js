@@ -73,14 +73,13 @@ class App extends React.Component {
 
         <Map className="map" center={position} zoom={this.state.zoom} maxBounds={[[-85, -220], [85, 250]]}>
           <TileLayer
-            attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-            minZoom='2'
-
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+            minZoom="2"
           />
           <Marker icon={myIcon} position={position}>
             <Popup onClick={this.clickPopup} position={position}>You</Popup>
-          </Marker> 
+          </Marker>
 
           {this.state.caseStats.map(c =>
 
@@ -182,11 +181,11 @@ class App extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                  {this.state.caseStats.map(c => (c.latestTotalCases !== 0) ?<tr>
+                  {this.state.caseStats.map(c => (c.latestTotalCases !== 0) ? <tr>
                     <th scope="row">{c.country}</th>
                     <td>{c.state}</td>
                     <td>{c.latestTotalCases}</td>
-                  </tr>:null)}
+                  </tr> : null)}
                 </tbody>
               </Table>
             </div>
