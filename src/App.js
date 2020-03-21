@@ -80,7 +80,7 @@ class App extends React.Component {
           />
           <Marker icon={myIcon} position={position}>
             <Popup onClick={this.clickPopup} position={position}>You</Popup>
-          </Marker> : ''
+          </Marker> 
 
           {this.state.caseStats.map(c =>
 
