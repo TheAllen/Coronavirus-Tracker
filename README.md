@@ -1,8 +1,8 @@
-##Covid-19 Tracker
-```
+## Covid-19 Tracker
+
 
 ###### Description
-```
+
 A quick project created to inform users of the Covid-19 cases around the world.
 
 ###### Development
