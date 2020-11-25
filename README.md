@@ -12,8 +12,14 @@ A quick project created to inform users of the Covid-19 cases around the world.
 - Bootstrap
 
 ### Development
-> Client-Side: React, Leaflet for creating the map view, and Bootstrap for styling.
-> Server-Side: Spring Boot to schedule cron jobs to fetch data every few hours.
+
+####### Client-Side
+- React 
+- Leaflet for creating the map view 
+- Bootstrap for styling.
+
+####### Server-Side 
+- Spring Boot to schedule cron jobs to fetch data every few hours
 
 ![](map.png)
 
