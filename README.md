@@ -3,7 +3,7 @@
 
 ### Description
 
-A quick project created to inform users of the Covid-19 cases around the world.
+An web applicatio created to inform users of the Covid-19 cases around the world. The cases are listed on the left with the countries with the highest cases.
 
 ### Technology
 - Spring Boot
